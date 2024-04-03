@@ -10,10 +10,10 @@ function Footer() {
 
 	function handleBlur() {
 		if (!inputValue.includes('@')) {
-			alert("Attention, il n'y a pas d'@, ceci n'est pas une adresse valide.")
+			alert("Attention, il n'y a pas d'@, ceci n'est pas une adresse valide 😥")
 		}
 	}
-	
+
 	return (
 		<footer className='lmj-footer'>
 			<div className='lmj-footer-elem'>
@@ -22,10 +22,10 @@ function Footer() {
 			<div className='lmj-footer-elem'>Laissez-nous votre mail :</div>
 			<input
 				placeholder='Entrez votre mail'
-				value={inputValue}
 				onChange={handleInput}
+				value={inputValue}
 				onBlur={handleBlur}
-			></input>
+			/>
 		</footer>
 	)
 }
