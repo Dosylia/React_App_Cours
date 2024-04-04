@@ -1,11 +1,11 @@
-
+import '../styles/Categories.css'
 
 function Categories({ setActiveCategory, categories, activeCategory }) {
 
     return (
-        <div>
-            <label htmlFor="categories">Categories:</label>
+        <div className='lmj-categories'>
             <select 
+            className='lmj-categories-select'
             id="categories" 
             value={activeCategory}
             onChange={(e) => setActiveCategory(e.target.value)}>
